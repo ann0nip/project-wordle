@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function GuessInput({ onSubmit }) {
+function GuessInput({ onSubmit, disabled }) {
     const [inputValue, setInputValue] = useState('');
 
     const handleOnSubmit = (e) => {
@@ -25,6 +25,7 @@ function GuessInput({ onSubmit }) {
                 required
                 type="text"
                 value={inputValue}
+                disabled={disabled}
             />
         </form>
     );
