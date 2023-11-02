@@ -19,7 +19,7 @@ function Game() {
 
     return (
         <>
-            <GuessWordList words={words} />
+            <GuessWordList words={words} answer={answer} />
             <GuessInput onSubmit={handleSubmit} />
         </>
     );
